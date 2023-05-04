@@ -8,15 +8,7 @@ import firebase_admin
 import requests
 from firebase_admin import credentials
 from firebase_admin import db
-config={'apiKey': "AIzaSyCNH2MoIDjT3_mW3uDEP8fQudLW3ec3C4Q",
-    'authDomain': "rustoleumauth.firebaseapp.com",
-    'projectId': "rustoleumauth",
-    'storageBucket': "rustoleumauth.appspot.com",
-    'messagingSenderId': "750767456125",
-    'appId': "1:750767456125:web:53f65499e9b83ab61e9614",
-    'measurementId': "G-CW0FMX254N",
-    'databaseURL': ''
-    }
+
 cred = credentials.Certificate("/Users/carlosborjes/Desktop/real-rustoleum/rustoleumauth-firebase-adminsdk-xboy0-0991945e03.json")
 firebase = pyrebase.initialize_app(config)
 auth=firebase.auth()
